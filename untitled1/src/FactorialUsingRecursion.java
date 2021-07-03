@@ -1,2 +1,16 @@
-package PACKAGE_NAME;public class FactorialUsingRecursion {
+public class FactorialUsingRecursion {
+    public static int factorial(int n){
+        if(n==0){
+            return 1;
+        }
+        return n*factorial(n-1);
+    }
+    public static int factorial2(int n){
+        int res=1;
+        for(int i=1;i<=n;i++){
+            res=res*i;
+        }
+        return res;
+    }
+
 }
